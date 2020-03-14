@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{{ u }}
+{% for u in list %}
+{{ u.Uid,u.Uname,u.Pword,u.Fname,u.Lname,u.PhoneNo,u.Eid,u.Gender }}<a href="delete/{{u.Uid }}">delete</a>&nbsp;
+<a href="update/{{ u.Uid }}">UPDATE</a>
+{%endfor%}
+</body>
+</html>

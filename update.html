@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body style="background-color: greenyellow">
+<h1>This is the updation page plze edit data which we want to update </h1>
+<form action="/update/{{u.Uid}}" method="post">
+    <pre>
+        UserName&nbsp;:<input type="text" name="uname" value="{{ u.Uname }}">
+        Password&nbsp;:<input type="password" name="pword" value="{{u.Pword  }}">
+        FirstName:<input type="text" name="fname" value="{{ u.Fname }}">
+        lastName&nbsp;:<input type="text" name="lname" value="{{ u.Lname }}">
+        Gender&nbsp;&nbsp;&nbsp;:<input type="radio" name="Gender" value="Male">Male<input type="radio" name="Gender" value="Female">Female
+        phonno&nbsp;&nbsp;&nbsp;:<input type="text" name="phon" value="{{ u.PhoneNo }}">
+        Email_id&nbsp;:<input type="email" name="eid" value="{{ u.Eid }}">
+                    <input type="submit" value="UPDATE">
+    </pre>
+</form>
+
+</body>
+</html>

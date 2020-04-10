@@ -1,0 +1,15 @@
+def finder(l,n):
+     cn=0
+     t=0
+     for i in l:
+          if i==n:
+               t+=1
+               if t==1:
+                    print("starting location",cn)
+          cn=cn+1
+     print("last location occured",cn-1)
+     print(n," occured ",t,"times is the list")               
+list=[1,2,3,4,5,4,6,7,8,4,9,3,10,4,3,4,4]
+finder(list,int(input("enter no for search")))
+
+
